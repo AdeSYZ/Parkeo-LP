@@ -1,0 +1,95 @@
+/* Keep your existing styles */
+#customerList {
+  display: flex;
+  flex-direction: column; /* stack children vertically */
+}
+
+#reset {
+	background-color: pink;
+	border-color: gray;
+}
+
+.card {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.crossed {
+  background-color: pink;
+  order: 9999;
+}
+
+.hidden {
+  display: none;
+}
+
+.card label {
+  margin-right: 10px;
+}
+
+.card input {
+  margin-left: 20px;
+}
+
+/* ------------------ */
+/* Added styling only */
+/* ------------------ */
+
+/* Center container on larger screens */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f8f8f8;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;       /* centers horizontally */
+  padding: 20px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Inputs and buttons aligned */
+#searchField {
+  width: 60%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Cards spacing */
+.card {
+  border-radius: 4px;
+}
+
+/* Responsive: on small screens, inputs/buttons go full width */
+@media (max-width: 600px) {
+  #searchField {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+	.container {
+		margin: 0 auto;       /* centers horizontally */
+		padding: 20px;
+	}
+
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  #reset {
+    float: none;
+  }
+}
