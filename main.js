@@ -1,7 +1,41 @@
 //https://processsystech.azurewebsites.net/Subscriber/Subscriber/52134?parkId=16
 
 // Imaginary set of customer data
-import {customers} from "./dataset.js";
+import {customers222} from "./222.js";
+import {customers400} from "./400.js";
+import {customers25} from "./25.js";
+
+const siteField = document.querySelector("#siteField");
+let site;
+if(siteField.value === null || siteField.value === ""){
+	siteField.value = "222 Queen";
+	site = "222 Queen";
+	localStorage.setItem("site", JSON.stringify(siteField.value))
+} else {
+	siteField.value = JSON.parse(localStorage.getItem("site"));
+	site = siteField.value;
+}
+
+siteField.addEventListener("change", e =>{
+	site = e.target.value;
+	localStorage.setItem("site", JSON.stringify(siteField.value))
+	console.log("the selected site is: " + site);
+	window.location.reload();
+})
+
+console.log("the selected site is: " + site);
+let customers;
+
+if(site == "222 Queen"){
+	customers = customers222;
+} 
+
+else if(site == "400 Cooper"){
+	customers = customers400;
+}
+else if(site == "25 Fitzgerald"){
+	customers = customers25;
+}
 
 // List element to contain the customer data
 const list = document.querySelector("#customerList");
@@ -30,7 +64,6 @@ checkboxes.forEach(checkbox => {
 		if(!checkedPlates.includes(e.target.id) && e.target.checked){
 			checkedPlates.push(e.target.id);
 			updateMemory();
-			console.log("Plate saved: ", e.target.id)
 		}
 		else{
 			checkedPlates.splice(checkedPlates.indexOf(e.target.id), 1);
