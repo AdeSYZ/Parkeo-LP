@@ -1,4 +1,4 @@
-export const customers222 = [ //updated April 10th
+export const customers222 = [
   { id: "132978", plates: ["CVFC543"] },
   { id: "132857", plates: ["CARM844"] },
   { id: "132820", plates: ["BONO1"] },
@@ -17,14 +17,13 @@ export const customers222 = [ //updated April 10th
   { id: "142223", plates: ["CJMH695"] },
   { id: "151545", plates: ["BTYP434"] },
   { id: "215399", plates: ["CMBX222"] },
-  { id: "170888", plates: ["DDCV836", "GVNR042"] },
+  { id: "170888", plates: ["BYYZ981", "GVNR042"] },
   { id: "211961", plates: ["BXJY531"] },
   { id: "192295", plates: ["950CDT", "DFKE414"] },
   { id: "132869", plates: ["BMNY586", "BSBP366"] },
   { id: "138101", plates: ["CXAL482"] },
   { id: "132819", plates: ["K98YYP"] },
   { id: "132874", plates: ["BYKW220"] },
-  { id: "209632", plates: ["CTTS383", "CYAZ758"] },
   { id: "132871", plates: ["CVXM099", "DDRW080"] },
   { id: "173717", plates: ["CWBZ925"] },
   { id: "133001", plates: ["E80PGD", "N91ZNL"] },
@@ -42,4 +41,4 @@ export const customers222 = [ //updated April 10th
   { id: "175621", plates: ["817CDT", "867CDT", "950CDT"] },
   { id: "132988", plates: ["E80PGD", "N91ZNL"] },
   { id: "133048", plates: ["CLJS017"] }
-];
+]
