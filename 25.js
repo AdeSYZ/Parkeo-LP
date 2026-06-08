@@ -95,4 +95,4 @@ export const customers25 = [
   { id: "180969", plates: ["AE98420"] },
   { id: "181167", plates: ["BWSY599"] },
   { id: "202709", plates: ["ATEX598", "DFXB798"] }
-]
+];
