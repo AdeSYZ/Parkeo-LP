@@ -1,5 +1,5 @@
 export const customers222 = [
-    { id: "132978", plates: ["CVFC543"] },
+  { id: "132978", plates: ["CVFC543"] },
   { id: "132857", plates: ["CARM844"] },
   { id: "132820", plates: ["BONO1"] },
   { id: "182181", plates: ["ARMF448", "BBBB845"] },
@@ -42,4 +42,4 @@ export const customers222 = [
   { id: "175621", plates: ["817CDT", "867CDT", "950CDT"] },
   { id: "132988", plates: ["E80PGD", "N91ZNL"] },
   { id: "133048", plates: ["CLJS017"] }
-]
+];
